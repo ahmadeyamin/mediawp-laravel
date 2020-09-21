@@ -1,0 +1,20 @@
+{
+    "name": "Eyamin/Mediawp",
+    "description": "Laravel Media Maneger",
+    "type": "libarary",
+    "license": "MIC",
+    "authors": [
+        {
+            "name": "Ahmad Eyamin",
+            "email": "ahmadeyamin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Eyamin\\Mediawp\\": "src/"
+        }
+    }
+}
