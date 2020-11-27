@@ -3,6 +3,7 @@
 namespace Eyamin\Mediawp\Models;
 
 use App\User;
+use Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 

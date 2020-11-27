@@ -30,7 +30,7 @@ function attachmentSelected(){
     console.log(mediaWp.result);
     $('.editor-post-featured-image-show').removeClass('d-none');
     $('.editor-post-featured-image-show img').attr('src',mediaWp.result.src);
-    $('#post-featured-image').val(JSON.stringify(mediaWp.result));
+    $('#post-featured-image').val(mediaWp.result.srcM);
     $.modal.close();
 }
 

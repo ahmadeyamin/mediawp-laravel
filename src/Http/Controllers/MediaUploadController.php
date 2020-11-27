@@ -2,14 +2,15 @@
 
 namespace Eyamin\Mediawp\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Intervention\Image\Facades\Image as InterventionImage;
 use Storage;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use Eyamin\Mediawp\Models\Upload;
-use Eyamin\Mediawp\Http\Requests\MediaUploadRequest;
-use Symfony\Component\HttpFoundation\Response;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Response;
+use Eyamin\Mediawp\Http\Requests\MediaUploadRequest;
+use Intervention\Image\Facades\Image as InterventionImage;
 
 class MediaUploadController extends Controller
 {
@@ -20,7 +21,7 @@ class MediaUploadController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
 
@@ -96,7 +97,7 @@ class MediaUploadController extends Controller
 
         $folder = date('Y') . DIRECTORY_SEPARATOR . date('F') . DIRECTORY_SEPARATOR;
 
-        $filename = str_random(10) . '-' . time() . '.' . $file->getClientOriginalExtension();
+        $filename = Str::random(10) . '-' . time() . '.' . $file->getClientOriginalExtension();
 
             // return $filename;
 

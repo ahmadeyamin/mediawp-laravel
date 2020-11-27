@@ -1,0 +1,193 @@
+.attachments {
+    padding: 2px;
+}
+img.wp-list-image,.attachment-info-show-image,.croppr img {
+    width: 100%;
+}
+.attachment {
+    position: relative;
+    float: left;
+    padding: 8px;
+    margin: 0;
+    color: #444;
+    cursor: pointer;
+    list-style: none;
+    display: list-item;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.attachments-info {
+    display: none;
+    height: auto;
+    background: rgba(0, 0, 0, .40);
+    position: absolute;
+    width: 130px;
+    bottom: 8px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.attachment:hover .attachments-info {
+    display: block;
+}
+
+.attachments-info {
+    line-height: 1;
+    padding: 2px;
+}
+
+.attachments-info-name {
+    font-size: 14px;
+}
+
+.attachments-info-size {
+    font-size: 10px;
+}
+
+.attachment-preview {
+    position: relative;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, .1), inset 0 0 0 1px rgba(0, 0, 0, .05);
+    background: #eee;
+    cursor: pointer;
+}
+
+#attachments-view-ui {
+    height: auto !important;
+}
+
+.centered {
+    width: 130px;
+    height: 130px
+}
+
+.check {
+    background-color: #0073aa;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0073aa;
+    /* display: block; */
+    display: none;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    box-sizing: content-box;
+    border: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    outline: 0;
+    background: #eee;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(0, 0, 0, .20);
+}
+
+.check:hover {
+    background-color: #0073aa;
+}
+
+
+
+.check span:hover {
+    background-position: -60px 0;
+
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.modal {
+    overflow: visible;
+    padding: 20px 10px;
+    min-width: 90%;
+    height: auto !important;
+    /* min-height:max-content !important; */
+
+}
+
+.attachment-info-undisplay {
+    border: 2px dashed #ddd;
+    height: auto;
+    padding: 30px 0px;
+    align-content: center;
+    width: 350px;
+}
+
+
+.ajax-upload-dragdrop {
+    min-width: 100% !important;
+    height: 250px;
+}
+
+.ajax-file-upload {
+    margin: 100px auto 0px;
+    display: block;
+    width: 78px;
+}
+
+.ajax-upload-dragdrop span {
+    text-align: center;
+    display: block;
+    margin: 10px 0px;
+}
+
+.ajax-file-upload-statusbar {
+    display: inline-block;
+}
+#vanillatoasts-container{
+    z-index: 999999999;
+}
+.blocker.current{
+    z-index: 9999999;
+}
+.ajax-file-upload {
+    position: relative;
+    overflow: hidden;
+    cursor: default !important;
+    display: block !important;
+    width: 260px !important;
+    color: #fff !important;
+    font-size: 25px !important;
+}
+#tag-modal.modal{
+    position: fixed;
+    z-index: 9999999999;
+    padding: auto;
+    padding-right: auto;    
+    width: 100%;
+    background: none;
+    max-width: 100%;
+    height: auto !important;
+    margin: auto;
+    box-shadow: none
+}
+.ajax-upload-dragdrop .ajax-file-upload {
+    background: #00cff4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+#attachments-ajax-modal .card .card-body {
+    padding: 30px 28px;
+}

@@ -4,7 +4,7 @@
 
 
 
-Route::group(['namespace' => 'Eyamin\Mediawp\Http\Controllers','middleware'=>['web']], function () {
+Route::group(['namespace' => 'Eyamin\Mediawp\Http\Controllers','middleware'=> config('mediawp.middleware'),'prefix' => config('mediawp.prefix') ], function () {
     Route::get('/media', 'MediaUploadController@index')->name('admin.media');
 
 
